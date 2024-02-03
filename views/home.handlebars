@@ -1,0 +1,19 @@
+<main>
+  <h1>Tech Posts</h1>
+  <div>
+    {{#each posts}}
+      <div>
+        <div>
+          <div>
+            <h2>
+              <a href="/post/{{id}}">{{title}}</a>
+            </h2>
+          </div>
+          <div>
+            <p>By: {{user.username}} Date: {{format_date createdAt}}</p>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</main>

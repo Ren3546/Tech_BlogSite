@@ -1,0 +1,18 @@
+<main>
+  <div>
+    <div>
+      <h1>Dashboard</h1>
+      <a href="">Create a New Blog Post</a>
+    </div>
+  </div>
+  <br>
+  <h1>Your Posts:</h1>
+  {{#each posts}}
+    <div>
+      <h2><a href="">{{title}}</a></h2>
+      <p>By: {{user.username}} | Date: {{format_date createdAt}}</p>
+      <a href="">Edit Post</a>
+      <button>Delete</button>
+    </div>
+  {{/each}}
+</main>

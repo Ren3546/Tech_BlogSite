@@ -12,7 +12,7 @@ class Comment extends Model {}
                 autoIncrement: true,
             },
             content: {
-                type: DataTypes.TEXT,
+                type: DataTypes.STRING,
                 allowNull: false
             },
             userId: {
