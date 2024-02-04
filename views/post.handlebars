@@ -1,0 +1,18 @@
+{{!-- views/post.handlebars file --}}
+<main>
+  <span>
+    <h1>{{title}}</h1>
+    <p>Created by: {{username}} | Date: {{format_date createdAt}}</p>
+    <p>{{content}}</p>
+  </span>
+  {{#if logged_in}}
+    <form>
+      <div>
+        <textarea
+          rows="3"
+          placeholder="Add a comment..."
+        ></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  {{/if}}

@@ -19,7 +19,7 @@ class Post extends Model {}
                 type: DataTypes.TEXT,
                 allowNull: false,
             },
-            userId: {
+            userid: {
                 type: DataTypes.INTEGER,
                 references: {
                     model: 'user',
